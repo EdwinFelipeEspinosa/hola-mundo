@@ -25,7 +25,7 @@ jobs:
     steps:
       - name: step one
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: step two
         run: env | sort
 
@@ -38,7 +38,7 @@ jobs:
     steps:
       - name: step one
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - name: step two
         run: "Get-ChildItem Env | Sort-Object Name"
       
